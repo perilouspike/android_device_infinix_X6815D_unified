@@ -122,7 +122,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 # Android Verified Boot
 # TODO: What about the system_ext partition?
 BOARD_AVB_ENABLE := true
-BOARD_AVB_VBMETA_SYSTEM := system system_ext product
+BOARD_AVB_VBMETA_SYSTEM := system system_ext
 BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
 BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)

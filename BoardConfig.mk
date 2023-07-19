@@ -155,7 +155,7 @@ TW_INCLUDE_FBE_METADATA_DECRYPT := true
 # TWRP-Specific configuration
 TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
-TARGET_USES_MKE2FS := true
+#TARGET_USES_MKE2FS := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_DEFAULT_BRIGHTNESS := 500
 TW_MAX_BRIGHTNESS := 1000
@@ -167,6 +167,7 @@ TW_NO_SCREEN_BLANK := true
 #TW_FRAMERATE := 60
 #TW_HAS_MTP := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
+BOARD_HAS_NO_REAL_SDCARD := true
 
 
 # Include binaries
@@ -183,6 +184,7 @@ TW_EXCLUDE_TWRP_APP := true
 TW_EXCLUDE_APEX := true
 TW_EXCLUDE_PYTHON := true
 TW_EXCLUDE_NANO := true
+TW_EXCLUDE_SUPERSU := true
 
 # Hide notch for orangefox
 #ifneq ($(OF_HIDE_NOTCH),1)

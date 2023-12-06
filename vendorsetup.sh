@@ -135,7 +135,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	# 40-second countdown.
 	export OF_CHECK_OVERWRITE_ATTEMPTS=1
     # Enable the advanced security features.
-	export FOX_ADVANCED_SECURITY=1
+	export OF_ADVANCED_SECURITY=1
 	# Delete the initd addon.
 	export FOX_DELETE_INITD_ADDON=0
     # SAR detection.

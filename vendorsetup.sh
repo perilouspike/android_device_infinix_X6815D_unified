@@ -38,13 +38,13 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
     # Version / Maintainer infos.
 	export OF_MAINTAINER="perilouspike"
-	export FOX_VERSION="R11.1_1"
+	export FOX_VERSION="R11.1"
 	export FOX_BUILD_TYPE="Unofficial-Stable"
 
     # Device Information.
 	export FOX_ARCH=arm64
-	export OF_AB_DEVICE=1
-	export OF_VIRTUAL_AB_DEVICE=1
+	export FOX_AB_DEVICE=1=1
+	export FOX_VIRTUAL_AB_DEVICE=1
 	export FOX_VARIANT="A12_FBEv2"
 	export TARGET_DEVICE_ALT="X6815D,Infinix-X6815D,x6815d,INFINIX-X6815D" # I am not what are the over possible names.
 
@@ -53,7 +53,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
 	# OTA / DM-Verity / Encryption
     # Disabled the OTA settings by default.
-	export OF_DISABLE_MIUI_OTA_BY_DEFAULT=1
+	#export OF_DISABLE_MIUI_OTA_BY_DEFAULT=1
 	export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR=1
 	# Prevent patching DM-verity & Forced-Encryption.
 	export OF_DONT_PATCH_ON_FRESH_INSTALLATION=1

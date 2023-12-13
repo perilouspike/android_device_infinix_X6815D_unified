@@ -4,6 +4,11 @@
 
 # <mount_point>  <fstype>  <device>        <device2>                  <flags>
 
+system              /system                 auto                       logical
+vendor              /vendor                 auto                       display="Vendor";logical
+product             /product                auto                       display="Product";logical
+system_ext          /system_ext             auto                       logical
+
 # Vbmeta related partitions.
 /vbmeta                   emmc     /dev/block/by-name/vbmeta            flags=display="Vbmeta";backup=1;flashimg=1;slotselect
 /vbmeta_vendor            emmc     /dev/block/by-name/vbmeta_vendor     flags=display="Vbmeta_vendor";backup=1;flashimg=1;slotselect

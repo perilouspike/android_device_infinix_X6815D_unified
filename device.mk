@@ -44,7 +44,7 @@ AB_OTA_PARTITIONS += \
     vendor
    
 # fastboot/d hal
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
     fastbootd
 
@@ -84,15 +84,15 @@ PRODUCT_PACKAGES += \
 # Recovery modules
 TARGET_RECOVERY_DEVICE_MODULES += \
     libresetprop
-    #libgatekeeper_aidl
+    libgatekeeper_aidl
 
 RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libresetprop.so
-    #$(TARGET_OUT_SHARED_LIBRARIES)/libgatekeeper_aidl.so
+    $(TARGET_OUT_SHARED_LIBRARIES)/libgatekeeper_aidl.so
 
 TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libresetprop.so
-    #$(TARGET_OUT_SHARED_LIBRARIES)/libgatekeeper_aidl.so
+    $(TARGET_OUT_SHARED_LIBRARIES)/libgatekeeper_aidl.so
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)

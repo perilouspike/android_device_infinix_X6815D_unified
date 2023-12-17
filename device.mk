@@ -83,15 +83,15 @@ PRODUCT_PACKAGES += \
 
 # Recovery modules
 TARGET_RECOVERY_DEVICE_MODULES += \
-    libresetprop
+    libresetprop \
     libgatekeeper_aidl
 
 RECOVERY_LIBRARY_SOURCE_FILES += \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libresetprop.so
+    $(TARGET_OUT_SHARED_LIBRARIES)/libresetprop.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libgatekeeper_aidl.so
 
 TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libresetprop.so
+    $(TARGET_OUT_SHARED_LIBRARIES)/libresetprop.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libgatekeeper_aidl.so
 
 # Enable updating of APEXes

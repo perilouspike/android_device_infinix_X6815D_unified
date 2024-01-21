@@ -210,8 +210,8 @@ TARGET_USES_LOGD := true
 # Excludes
 TW_EXCLUDE_TWRP_APP := true
 TW_EXCLUDE_APEX := true
-TW_EXCLUDE_NANO := true
-TW_EXCLUDE_PYTHON := true
+#TW_EXCLUDE_NANO := true
+#TW_EXCLUDE_PYTHON := true
 TW_BACKUP_EXCLUSIONS := /data/fonts \
                         /data/nandswap
 

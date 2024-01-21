@@ -1,4 +1,4 @@
-#!/sbin/sh
+#!/system/bin/sh
 #
 #	This file is part of the OrangeFox Recovery Project
 # 	Copyright (C) 2019-2022 The OrangeFox Recovery Project
@@ -22,8 +22,8 @@
 # system and vendor in some zip installers and in the gui
 #
 set_read_write_partitions() {
-local Parts=("system" "vendor" "product" "odm" "system_ext");
-  for i in "${Parts[@]}"
+local Parts="system vendor product odm system_ext";
+  for i in ${Parts}
   do
      echo "I:Setting $i to read/write" >> /tmp/recovery.log;
      blockdev --setrw /dev/block/mapper/$i;
@@ -37,4 +37,3 @@ mkdir /tmp/install/bin
 
 set_read_write_partitions;
 exit 0;
-#

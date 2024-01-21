@@ -224,3 +224,6 @@ TW_CUSTOM_CLOCK_POS := 60
 # Filesystem Support
 #TW_INCLUDE_FUSE_EXFAT := true
 #TW_INCLUDE_FUSE_NTFS := true
+
+TW_INCLUDE_NANO := true
+TW_INCLUDE_PYTHON := true

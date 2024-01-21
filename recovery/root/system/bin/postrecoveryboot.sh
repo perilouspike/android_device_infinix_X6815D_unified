@@ -22,14 +22,20 @@
 # system and vendor in some zip installers and in the gui
 #
 set_read_write_partitions() {
-local Parts="system vendor product odm system_ext";
+  
+  # slot
+  local slot=$(getprop "ro.boot.slot_suffix");
+  
+  # partitions
+  local Parts="system system_ext vendor product";
+  
+  # loop through
   for i in ${Parts}
   do
      echo "I:Setting $i to read/write" >> /tmp/recovery.log;
-     blockdev --setrw /dev/block/mapper/$i;
+     blockdev --setrw /dev/block/mapper/$i"$slot";
   done
 }
-
 
 sleep 1
 mkdir /tmp/install

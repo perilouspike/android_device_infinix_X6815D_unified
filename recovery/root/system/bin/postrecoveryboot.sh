@@ -21,25 +21,24 @@
 # TODO: this kludge is needed to prevent issues with mounting
 # system and vendor in some zip installers and in the gui
 #
-set_read_write_partitions() {
-  
-  # slot
-  local slot=$(getprop "ro.boot.slot_suffix");
-  
-  # partitions
-  local Parts="system system_ext vendor product";
-  
-  # loop through
-  for i in ${Parts}
-  do
-     echo "I:Setting $i to read/write" >> /tmp/recovery.log;
-     blockdev --setrw /dev/block/mapper/$i"$slot";
-  done
-}
+sleep 1
+mount -w /product > /dev/null
+mount -w /vendor > /dev/null
+mount -w /odm > /dev/null
+mount -w /system_ext > /dev/null
+mount -w /system > /dev/null
 
 sleep 1
+umount /product > /dev/null
+umount /vendor > /dev/null
+umount /odm > /dev/null
+umount /system_ext > /dev/null
+umount /system > /dev/null
+
+sleep 1
+mkdir /data/media
 mkdir /tmp/install
 mkdir /tmp/install/bin
 
-set_read_write_partitions;
-exit 0;
+exit 0
+#

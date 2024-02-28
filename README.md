@@ -1,6 +1,6 @@
 # Infinix Zero 5G 2023
                                                  
-The Infinix Xero 5G 2023 (codenamed _'X6815D'_) is a mid-range smartphone launched in 2023, 4th February.
+The Infinix Xero 5G 2023 (codenamed _X6815D_) is a mid-range smartphone launched in 2023, 4th February.
 
 ## Device specifications
 
@@ -23,4 +23,4 @@ The Infinix Xero 5G 2023 (codenamed _'X6815D'_) is a mid-range smartphone launch
 
 ## Infinix Zero 5G 2023
 
-![image](https://i.gadgets360cdn.com/products/large/infinix-5g-db-709x800-1675503791.jpg?downsize=*:420&output-quality=80)
+![image](https://fdn2.gsmarena.com/vv/pics/infinix/infinix-zero-5g-2023-turbo-1.jpg)
